@@ -59,6 +59,7 @@ export default Footer;
 
 const Container = styled.div`
 	display: flex;
+	flex-direction: column;
 	background-color: #ff534a;
 	color: white;
 	font-size: small;
@@ -87,7 +88,6 @@ const Container = styled.div`
 			}
 		}
 	}
-	flex-direction: column;
 	> section {
 		display: flex;
 		padding: 40px 20px;
@@ -101,6 +101,16 @@ const Container = styled.div`
 			:last-child {
 				> p {
 					text-align: end;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 400px) {
+		> section {
+			flex-direction: column;
+			> div {
+				> p {
+					text-align: center !important;
 				}
 			}
 		}
