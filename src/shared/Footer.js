@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
 	return (
-		<Fade triggerOnce={true} direction="up" >
+		<Fade triggerOnce={true} direction="up">
 			<Container>
 				<section>
 					<div>
@@ -93,18 +93,13 @@ const Container = styled.div`
 	}
 	> section {
 		display: flex;
-		padding: 40px 20px;
+		padding: 40px 30px;
 
 		align-items: center;
 		justify-content: space-between;
 		> div {
 			> p {
 				margin: 15px 0;
-			}
-			:last-child {
-				> p {
-					text-align: end;
-				}
 			}
 		}
 	}
