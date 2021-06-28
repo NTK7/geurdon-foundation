@@ -1,13 +1,15 @@
-import { Button, Fade } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Fade } from 'react-awesome-reveal';
 
 const HomePage = () => {
 	return (
 		<Container>
-			<h3>Guerdon Foundation</h3>
-			<Fade triggerOnce={true}>
+			<Fade triggerOnce={true} delay={500}>
+				<h3>Guerdon Foundation</h3>
+
 				<Carousel
 					autoPlay={true}
 					emulateTouch={true}
@@ -35,10 +37,11 @@ const HomePage = () => {
 						<img src="https://rsf.org/sites/default/files/justice_2.jpg" alt="related-img" />
 					</div>
 				</Carousel>
+
+				<div className="userHome__DonateNow">
+					<Button>Donate Now</Button>
+				</div>
 			</Fade>
-			<div className="userHome__DonateNow">
-				<Button>Donate Now</Button>
-			</div>
 
 			{/* who are we */}
 			{/* Our programs */}
@@ -51,7 +54,7 @@ export default HomePage;
 const Container = styled.div`
 	/* border: 1px blue solid; */
 
-	> h3 {
+	h3 {
 		margin: 20px 0;
 		text-align: center;
 		color: #ff534a;
@@ -87,7 +90,7 @@ const Container = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		> h3 {
+		h3 {
 			display: block;
 		}
 		.userHome__DonateNow {
@@ -97,7 +100,7 @@ const Container = styled.div`
 		}
 	}
 	@media screen and (max-width: 400px) {
-		> h2 {
+		h3 {
 			font-size: medium;
 		}
 		.userHome__DonateNow {
