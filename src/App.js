@@ -11,9 +11,6 @@ const App = () => {
 				<Header />
 				<DrawableTab />
 				<Switch>
-					<Route path="/:option">
-						<Redirect path="/" />
-					</Route>
 					<Route path="/">
 						<HomePage />
 					</Route>
