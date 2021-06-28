@@ -1,13 +1,108 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const Footer = () => {
-    return (
-        <Container>
-            <h2>Footer</h2>
-        </Container>
-    )
-}
+	return (
+		<Container>
+			<section>
+				<div>
+					<p>
+						<strong>Get in touch</strong>
+					</p>
+					<p>
+						<strong>Tel:</strong>{' '}
+						<a target="_blank" rel="noreferrer" href="tel:+94764356773">
+							+94764356773
+						</a>
+					</p>
+					<p>
+						<strong>Instagram:</strong>{' '}
+						<a target="_blank" rel="noreferrer" href="/">
+							instagram-link
+						</a>
+					</p>
+					<p>
+						<strong>Twitter:</strong>{' '}
+						<a target="_blank" rel="noreferrer" href="/">
+							twitter-link
+						</a>
+					</p>
+				</div>
+				<div>
+					<p>
+						<a target="_blank" rel="noreferrer" href="/">
+							View Annual report{' '}
+						</a>
+					</p>
+					<p>
+						<a target="_blank" rel="noreferrer" href="/">
+							Sponsor a child
+						</a>
+					</p>
+					<p>
+						<a target="_blank" rel="noreferrer" href="/">
+							Join as a volunteer
+						</a>
+					</p>
+				</div>
+			</section>
+			<p className="developer">
+				Developer:{' '}
+				<a target="_blank" rel="noreferrer" href="https://nazhimkalam.github.io">
+					@nazhimkalam
+				</a>
+			</p>
+		</Container>
+	);
+};
 
-export default Footer
+export default Footer;
 
-const Container = styled.div``;
+const Container = styled.div`
+	display: flex;
+	background-color: #ff534a;
+	color: white;
+	font-size: small;
+
+	a {
+		text-decoration: none;
+		color: white;
+		:hover {
+			font-weight: bold;
+		}
+	}
+	.developer {
+		color: #ffa8a5;
+		cursor: pointer;
+		a {
+			color: #ffa8a5;
+		}
+		border-top: 1px #ffa8a5 solid;
+		padding: 10px;
+
+		text-align: center;
+		:hover {
+			color: white;
+			a {
+				color: white;
+			}
+		}
+	}
+	flex-direction: column;
+	> section {
+		display: flex;
+		padding: 40px 20px;
+
+		align-items: center;
+		justify-content: space-between;
+		> div {
+			> p {
+				margin: 15px 0;
+			}
+			:last-child {
+				> p {
+					text-align: end;
+				}
+			}
+		}
+	}
+`;

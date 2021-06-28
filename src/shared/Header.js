@@ -48,6 +48,7 @@ const Container = styled.div`
 			color: white;
 			margin: 0 10px;
 			font-weight: bold;
+			/* text-transform: capitalize; */
 
 			:hover {
 				border: 2px whitesmoke solid;

@@ -64,12 +64,6 @@ export default function DrawableTab() {
 					</ListItemIcon>
 					<ListItemText primary="Join as a volunteer" onClick={() => history.replace('/')} />
 				</ListItem>
-                <ListItem button key="Join as a volunteer">
-					<ListItemIcon>
-						<AccessibilityNewIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
-					</ListItemIcon>
-					<ListItemText primary="Join as a volunteer" onClick={() => history.replace('/')} />
-				</ListItem>
 			</List>
 		</div>
 	);
