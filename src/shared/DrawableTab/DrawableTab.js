@@ -48,21 +48,21 @@ export default function DrawableTab() {
 			<List>
 				<ListItem button key="Home">
 					<ListItemIcon>
-						<HomeRoundedIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/home')} />
+						<HomeRoundedIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
 					</ListItemIcon>
-					<ListItemText primary="Home" onClick={() => history.replace('/home')} />
+					<ListItemText primary="Home" onClick={() => history.replace('/')} />
 				</ListItem>
 				<ListItem button key="Sponsor a child">
 					<ListItemIcon>
-						<AttachMoneyIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/home')} />
+						<AttachMoneyIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
 					</ListItemIcon>
-					<ListItemText primary="Sponsor a child" onClick={() => history.replace('/home')} />
+					<ListItemText primary="Sponsor a child" onClick={() => history.replace('/')} />
 				</ListItem>
 				<ListItem button key="Join as a volunteer">
 					<ListItemIcon>
-						<AccessibilityNewIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/home')} />
+						<AccessibilityNewIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
 					</ListItemIcon>
-					<ListItemText primary="Join as a volunteer" onClick={() => history.replace('/home')} />
+					<ListItemText primary="Join as a volunteer" onClick={() => history.replace('/')} />
 				</ListItem>
 			</List>
 		</div>
