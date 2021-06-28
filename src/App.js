@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import DrawableTab from './shared/DrawableTab/DrawableTab';
 import Footer from './shared/Footer';
@@ -11,6 +11,9 @@ const App = () => {
 				<Header />
 				<DrawableTab />
 				<Switch>
+					<Route path="/:option">
+						<Redirect path="/" />
+					</Route>
 					<Route path="/">
 						<HomePage />
 					</Route>
