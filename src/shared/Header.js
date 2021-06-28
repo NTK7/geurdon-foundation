@@ -47,6 +47,7 @@ const Container = styled.div`
 			background-color: #ff534a;
 			color: white;
 			margin: 0 10px;
+            font-family: 'Poppins', sans-serif;
 			font-weight: bold;
 			/* text-transform: capitalize; */
 

@@ -46,7 +46,7 @@ export default function DrawableTab() {
 			onClick={toggleDrawer(anchor, false)}
 			onKeyDown={toggleDrawer(anchor, false)}>
 			<List>
-				<ListItem button key="Home">
+				<ListItem button key="Home" className="listItem">
 					<ListItemIcon>
 						<HomeRoundedIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
 					</ListItemIcon>
@@ -58,7 +58,7 @@ export default function DrawableTab() {
 					</ListItemIcon>
 					<ListItemText primary="Sponsor a child" onClick={() => history.replace('/')} />
 				</ListItem>
-				<ListItem button key="Join as a volunteer">
+				<ListItem button key="Join as a volunteer" className="listItem__title">
 					<ListItemIcon>
 						<AccessibilityNewIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
 					</ListItemIcon>
@@ -71,7 +71,7 @@ export default function DrawableTab() {
 	return (
 		<Fade triggerOnce={true} direction="down">
 			<Container>
-				<div>
+				<div className="drawable__list">
 					<React.Fragment key="left">
 						<Button className="drawable__menu" onClick={toggleDrawer('left', true)}>
 							<MenuIcon />{' '}
@@ -92,9 +92,11 @@ const Container = styled.div`
 	justify-content: space-between;
 	background-color: #ff534a;
 	padding: 20px 0;
+
 	.drawable__menu {
 		padding: 0px !important;
 		margin: 0px !important;
+
 		.MuiSvgIcon-root {
 			color: white !important;
 		}
@@ -105,9 +107,12 @@ const Container = styled.div`
 		padding: 0 15px;
 		flex: 0.1;
 	}
-	div > h2 {
-		font-size: large;
+	.drawable__list {
+		> h2 {
+			font-size: large;
+		}
 	}
+
 	@media screen and (max-width: 900px) {
 		display: flex;
 	}
