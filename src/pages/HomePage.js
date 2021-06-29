@@ -46,7 +46,7 @@ const HomePage = () => {
 			</Fade>
 
 			{/* who are we */}
-			<Fade triggerOnce={true} delay={1000} direction="up">
+			<Fade triggerOnce={true} delay={800} direction="up">
 				<div className="userHome__whoAreWe">
 					<h1>Who Are We</h1>
 					<p>
@@ -64,24 +64,27 @@ const HomePage = () => {
 			</Fade>
 
 			{/* Our programs */}
-			<Fade triggerOnce={true}>
+			<Fade triggerOnce={true} direction="up" delay={800}>
 				<div className="userHome__ourPrograms">
 					<h1>Our programs</h1>
 					<main>
 						<FlipCard
 							title="Weekly feeding program"
 							description="This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself"
-							direction="vertical"
+							flipDirection="vertical"
+							fadeDirection="right"
 						/>
 						<FlipCard
 							title="Monthly distribution of care package"
 							description="This is some description about the card itself, This is some descripti scription about the card itsehe card itself, This is some description about the card itself"
-							direction="horizontal"
+							flipDirection="horizontal"
+							fadeDirection="up"
 						/>
 						<FlipCard
 							title="Child education program"
 							description="This is some description about the card itself, This is some descripti scription ab cripti scription abcripti scription abcripti scription about the card itsehe card itself, This is some description about the card itself"
-							direction="vertical"
+							flipDirection="vertical"
+							fadeDirection="left"
 						/>
 					</main>
 				</div>
@@ -144,9 +147,39 @@ const Container = styled.div`
 	}
 
 	.userHome__ourPrograms {
+		/* border: 1px blue solid; */
+		margin: 40px;
+		padding: 80px 0;
+
+		> h1 {
+			text-align: center;
+			color: #ff534a;
+			margin-bottom: 30px;
+		}
 		> main {
 			display: flex;
 			justify-content: space-evenly;
+		}
+	}
+	@media screen and (max-width: 1100px) {
+		.userHome__ourPrograms {
+			margin: 30px 0;
+			padding: 50px 0;
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		.userHome__ourPrograms {
+			> h1 {
+				text-align: center;
+				color: #ff534a;
+				margin-bottom: 30px;
+			}
+			> main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly;
+			}
 		}
 	}
 
@@ -178,6 +211,17 @@ const Container = styled.div`
 			}
 			> p {
 				text-align: justify;
+			}
+		}
+		.userHome__ourPrograms {
+			/* border: 1px blue solid; */
+			margin: 40px 20px;
+			padding: 0;
+
+			> h1 {
+				font-size: x-large;
+				margin-bottom: 10px;
+
 			}
 		}
 	}

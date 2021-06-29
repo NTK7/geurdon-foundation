@@ -45,10 +45,11 @@ const Footer = () => {
 					</div>
 				</section>
 				<p className="developer">
-					Developer:{' '}
+					{/* Developer:{' '}
 					<a target="_blank" rel="noreferrer" href="https://nazhimkalam.github.io">
 						@nazhimkalam
-					</a>
+					</a> */}
+					Guerdon Foundation
 				</p>
 			</Container>
 		</Fade>
