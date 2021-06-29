@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Fade } from 'react-awesome-reveal';
+import FlipCard from '../components/FlipCard';
 
 const HomePage = () => {
 	return (
@@ -63,7 +64,28 @@ const HomePage = () => {
 			</Fade>
 
 			{/* Our programs */}
-			<Fade triggerOnce={true}></Fade>
+			<Fade triggerOnce={true}>
+				<div className="userHome__ourPrograms">
+					<h1>Our programs</h1>
+					<main>
+						<FlipCard
+							title="Weekly feeding program"
+							description="This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself"
+							direction="vertical"
+						/>
+						<FlipCard
+							title="Monthly distribution of care package"
+							description="This is some description about the card itself, This is some descripti scription about the card itsehe card itself, This is some description about the card itself"
+							direction="horizontal"
+						/>
+						<FlipCard
+							title="Child education program"
+							description="This is some description about the card itself, This is some descripti scription ab cripti scription abcripti scription abcripti scription about the card itsehe card itself, This is some description about the card itself"
+							direction="vertical"
+						/>
+					</main>
+				</div>
+			</Fade>
 		</Container>
 	);
 };
@@ -90,7 +112,7 @@ const Container = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-top: 50px;
 		> button {
 			border: 1px white solid;
 			padding: 20px 40px;
@@ -121,6 +143,13 @@ const Container = styled.div`
 		}
 	}
 
+	.userHome__ourPrograms {
+		> main {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+
 	@media screen and (max-width: 900px) {
 		h3 {
 			display: block;
@@ -139,6 +168,7 @@ const Container = styled.div`
 			> button {
 				padding: 10px 30px;
 			}
+			margin-top: 30px;
 		}
 		.userHome__whoAreWe {
 			padding: 0;

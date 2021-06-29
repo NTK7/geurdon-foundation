@@ -11,10 +11,7 @@ const Footer = () => {
 							<strong>Get in touch</strong>
 						</p>
 						<p>
-							<strong>Tel:</strong>{' '}
-							<a target="_blank" rel="noreferrer" href="tel:+94764356773">
-								+94764356773
-							</a>
+							<strong>Tel:</strong> <a href="tel:+94764356773">+94764356773</a>
 						</p>
 						<p>
 							<strong>Instagram:</strong>{' '}
