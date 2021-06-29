@@ -9,7 +9,7 @@ const HomePage = () => {
 	return (
 		<Container>
 			<Fade triggerOnce={true} delay={500}>
-				<h3>Guerdon Foundation</h3>
+				<h2>Guerdon Foundation</h2>
 
 				<Carousel
 					autoPlay={true}
@@ -98,8 +98,8 @@ export default HomePage;
 const Container = styled.div`
 	/* border: 1px blue solid; */
 
-	h3 {
-		margin: 20px 0;
+	h2 {
+		margin: 30px 0;
 		text-align: center;
 		color: #ff534a;
 		display: none;
@@ -184,7 +184,7 @@ const Container = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		h3 {
+		h2 {
 			display: block;
 		}
 		.userHome__DonateNow {
@@ -194,8 +194,8 @@ const Container = styled.div`
 		}
 	}
 	@media screen and (max-width: 400px) {
-		h3 {
-			font-size: medium;
+		h2 {
+			font-size: large;
 		}
 		.userHome__DonateNow {
 			> button {
