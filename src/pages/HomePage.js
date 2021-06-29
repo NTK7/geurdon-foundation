@@ -37,14 +37,33 @@ const HomePage = () => {
 						<img src="https://rsf.org/sites/default/files/justice_2.jpg" alt="related-img" />
 					</div>
 				</Carousel>
-
+			</Fade>
+			<Fade triggerOnce={true} direction="up" delay={500}>
 				<div className="userHome__DonateNow">
 					<Button>Donate Now</Button>
 				</div>
 			</Fade>
 
 			{/* who are we */}
+			<Fade triggerOnce={true} delay={1000} direction="up">
+				<div className="userHome__whoAreWe">
+					<h1>Who Are We</h1>
+					<p>
+						This is some text.This is some text.This is some text.This is some text.This is some text.This
+						is some text.This is some text.This is some text.This is some text.This is some text.This is
+						some text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.This is some text.This is some
+						text.This is some text.This is some text.This is some text.
+					</p>
+				</div>
+			</Fade>
+
 			{/* Our programs */}
+			<Fade triggerOnce={true}></Fade>
 		</Container>
 	);
 };
@@ -88,6 +107,19 @@ const Container = styled.div`
 			}
 		}
 	}
+	.userHome__whoAreWe {
+		/* border: 1px blue solid; */
+		margin: 40px;
+		padding: 40px 20px;
+		> p,
+		> h1 {
+			text-align: center;
+		}
+		> h1 {
+			color: #ff534a;
+			margin-bottom: 10px;
+		}
+	}
 
 	@media screen and (max-width: 900px) {
 		h3 {
@@ -106,6 +138,16 @@ const Container = styled.div`
 		.userHome__DonateNow {
 			> button {
 				padding: 10px 30px;
+			}
+		}
+		.userHome__whoAreWe {
+			padding: 0;
+			margin: 40px 20px;
+			> h1 {
+				font-size: x-large;
+			}
+			> p {
+				text-align: justify;
 			}
 		}
 	}
