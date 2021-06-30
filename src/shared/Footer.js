@@ -10,8 +10,11 @@ const Footer = () => {
 						<p>
 							<strong>Get in touch</strong>
 						</p>
-							<p>
-							<strong>Email:</strong> <a href="mailto:guerdonfoundation@gmail.com" target="_blank" rel="noreferrer">guerdonfoundation@gmail.com</a>
+						<p>
+							<strong>Email:</strong>{' '}
+							<a href="mailto:guerdonfoundation@gmail.com" target="_blank" rel="noreferrer">
+								guerdonfoundation@gmail.com
+							</a>
 						</p>
 						<p>
 							<strong>Tel:</strong> <a href="tel:+94778093354">+94778093354</a>
@@ -19,13 +22,13 @@ const Footer = () => {
 						<p>
 							<strong>Instagram:</strong>{' '}
 							<a target="_blank" rel="noreferrer" href="https://www.instagram.com/guerdonfoundation/">
-							guerdonfoundation
+								guerdonfoundation
 							</a>
 						</p>
 						<p>
 							<strong>Twitter:</strong>{' '}
-							<a target="_blank" rel="noreferrer" href="/">
-								twitter-link
+							<a target="_blank" rel="noreferrer" href="https://twitter.com/GuerdonFoundat1">
+								@GuerdonFoundat1
 							</a>
 						</p>
 					</div>
