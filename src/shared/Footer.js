@@ -10,13 +10,16 @@ const Footer = () => {
 						<p>
 							<strong>Get in touch</strong>
 						</p>
+							<p>
+							<strong>Email:</strong> <a href="mailto:guerdonfoundation@gmail.com" target="_blank" rel="noreferrer">guerdonfoundation@gmail.com</a>
+						</p>
 						<p>
-							<strong>Tel:</strong> <a href="tel:+94764356773">+94764356773</a>
+							<strong>Tel:</strong> <a href="tel:+94778093354">+94778093354</a>
 						</p>
 						<p>
 							<strong>Instagram:</strong>{' '}
-							<a target="_blank" rel="noreferrer" href="/">
-								instagram-link
+							<a target="_blank" rel="noreferrer" href="https://www.instagram.com/guerdonfoundation/">
+							guerdonfoundation
 							</a>
 						</p>
 						<p>
@@ -33,12 +36,12 @@ const Footer = () => {
 							</a>
 						</p>
 						<p>
-							<a target="_blank" rel="noreferrer" href="/">
+							<a target="_blank" rel="noreferrer" href="https://forms.gle/qLeWxxj3prrnFtqy7">
 								Sponsor a child
 							</a>
 						</p>
 						<p>
-							<a target="_blank" rel="noreferrer" href="/">
+							<a target="_blank" rel="noreferrer" href="https://forms.gle/zz9BQAmZCKb1uWUUA">
 								Join as a volunteer
 							</a>
 						</p>

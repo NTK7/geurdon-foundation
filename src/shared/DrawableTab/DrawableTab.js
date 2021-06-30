@@ -54,15 +54,39 @@ export default function DrawableTab() {
 				</ListItem>
 				<ListItem button key="Sponsor a child">
 					<ListItemIcon>
-						<AttachMoneyIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
+						<AttachMoneyIcon
+							style={{ color: '#ff534a' }}
+							onClick={(e) => {
+								e.preventDefault();
+								window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
+							}}
+						/>
 					</ListItemIcon>
-					<ListItemText primary="Sponsor a child" onClick={() => history.replace('/')} />
+					<ListItemText
+						primary="Sponsor a child"
+						onClick={(e) => {
+							e.preventDefault();
+							window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
+						}}
+					/>
 				</ListItem>
 				<ListItem button key="Join as a volunteer" className="listItem__title">
 					<ListItemIcon>
-						<AccessibilityNewIcon style={{ color: '#ff534a' }} onClick={() => history.replace('/')} />
+						<AccessibilityNewIcon
+							style={{ color: '#ff534a' }}
+							onClick={(e) => {
+								e.preventDefault();
+								window.open('https://forms.gle/zz9BQAmZCKb1uWUUA', '_blank');
+							}}
+						/>
 					</ListItemIcon>
-					<ListItemText primary="Join as a volunteer" onClick={() => history.replace('/')} />
+					<ListItemText
+						primary="Join as a volunteer"
+						onClick={(e) => {
+							e.preventDefault();
+							window.open('https://forms.gle/zz9BQAmZCKb1uWUUA', '_blank');
+						}}
+					/>
 				</ListItem>
 			</List>
 		</div>

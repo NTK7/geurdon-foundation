@@ -12,8 +12,20 @@ const Header = () => {
 					<h2>GUERDON FOUNDATION</h2>
 				</section>
 				<section>
-					<Button>Sponsor a child</Button>
-					<Button>Join as a volunteer</Button>
+					<Button
+						onClick={(e) => {
+							e.preventDefault();
+							window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
+						}}>
+						Sponsor a child
+					</Button>
+					<Button
+						onClick={(e) => {
+							e.preventDefault();
+							window.open('https://forms.gle/zz9BQAmZCKb1uWUUA', '_blank');
+						}}>
+						Join as a volunteer
+					</Button>
 				</section>
 			</Container>
 		</Fade>
@@ -47,7 +59,7 @@ const Container = styled.div`
 			background-color: #ff534a;
 			color: white;
 			margin: 0 10px;
-            font-family: 'Poppins', sans-serif;
+			font-family: 'Poppins', sans-serif;
 			font-weight: bold;
 			/* text-transform: capitalize; */
 
