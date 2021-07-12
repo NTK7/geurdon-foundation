@@ -8,7 +8,7 @@ const Header = () => {
 		<Fade triggerOnce={true} direction="down">
 			<Container>
 				<section>
-					<LazyLoadImage src="https://freepngimg.com/thumb/nike/28134-5-nike-logo.png" alt="" />
+					<LazyLoadImage src="/images/logo.png" alt="" />
 					<h2>GUERDON FOUNDATION</h2>
 				</section>
 				<section>
@@ -46,7 +46,7 @@ const Container = styled.div`
 		justify-content: space-between;
 		align-items: center;
 		> img {
-			height: 30px;
+			height: 50px;
 			object-fit: contain;
 		}
 		> h2 {
