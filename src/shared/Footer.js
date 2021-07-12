@@ -67,7 +67,7 @@ export default Footer;
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	background-color: #ff534a;
+	background-color: #8267da;
 	color: white;
 	font-size: small;
 
@@ -79,12 +79,12 @@ const Container = styled.div`
 		}
 	}
 	.developer {
-		color: #ffa8a5;
+		color: #f5f2ff;
 		cursor: pointer;
 		a {
 			color: #ffa8a5;
 		}
-		border-top: 1px #ffa8a5 solid;
+		border-top: 1px #f5f2ff solid;
 		padding: 10px;
 
 		text-align: center;

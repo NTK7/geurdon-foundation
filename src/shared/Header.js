@@ -35,7 +35,7 @@ const Header = () => {
 export default Header;
 
 const Container = styled.div`
-	background-color: #ff534a;
+	background-color: #8267DA;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -56,7 +56,7 @@ const Container = styled.div`
 		> button {
 			border: 2px white solid;
 			width: 200px;
-			background-color: #ff534a;
+			background-color: #8267DA;
 			color: white;
 			margin: 0 10px;
 			font-family: 'Poppins', sans-serif;
