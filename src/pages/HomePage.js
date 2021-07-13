@@ -38,47 +38,49 @@ const HomePage = () => {
         <div className="userHome__whoAreWe">
           <h1>About us</h1>
           <p>
-            Beggars are the embodiment of the fallacy that Human rights are
-            always bettering the lives of the unfortunate. Although beggars are
-            present at a global scale, Sri Lanka is chiefly infamous for having
-            an overwhelming number of beggars; ranging between piteous figures
-            of 85,000 to 100,000.
+            The Guerdon Foundation is an NGO carrying a focused mission of
+            supporting the lives of the beggars In Sri Lanka. Our goal is to
+            lend an additional and reliable hand to not only refine the lives of
+            beggars but also to reduce the number of them in Sri Lanka.
+          </p>
+          <br />
+          <p>
+            It goes without saying that beggars live a harsh life. Sadly, a lot
+            of us, though not all, look through the torn clothes, watch their
+            grimed, hashed skin and fail to regard that all of it is enveloping
+            a living human with human feelings; most similar to you in terms of
+            genome and soul. Life as a Beggar is many things at once; it is a
+            constant race of survival, keeping human whilst being continually
+            bombarded by insatiable hunger, feelings of hopelessness and
+            helplessness.
+          </p>
+          <br />
+          <p>
+            What’s even more depressing is that a majority of beggars were once
+            people living in privilege, their tongues aware of the taste of
+            luxury. They were people with dreams and talent all falling victim
+            under bad circumstances thrown by life. Many were abandoned by their
+            very own children for whom they worked tirelessly to achieve them a
+            great life; while some chose this life as an escape from the hostile
+            environment of Orphanages they were put in by force and then the
+            hapless victims who were born into poverty. Apart from the
+            innumerable predicaments they face from sustaining an unsanitary
+            lifestyle to living in a vicious cycle of poverty, the children are
+            stripped from their rights for education, a crafted recipe for a
+            never ending cycle of Beggary.
           </p>
           <div>
             <br />
+            <br />
             <h2>The life of a beggar</h2>
             <p>
-              The Guerdon Foundation is an NGO carrying a focused mission of
-              supporting the lives of the beggars In Sri Lanka. Our goal is to
-              lend an additional and reliable hand to not only refine the lives
-              of beggars but also to reduce the number of them in Sri Lanka.
+              Beggars are the embodiment of the fallacy that Human rights are
+              always bettering the lives of the unfortunate. Although beggars
+              are present at a global scale, Sri Lanka is chiefly infamous for
+              having an overwhelming number of beggars; ranging between piteous
+              figures of 85,000 to 100,000.
             </p>
-            <br />
-            <p>
-              It goes without saying that beggars live a harsh life. Sadly, a
-              lot of us, though not all, look through the torn clothes, watch
-              their grimed, hashed skin and fail to regard that all of it is
-              enveloping a living human with human feelings; most similar to you
-              in terms of genome and soul. Life as a Beggar is many things at
-              once; it is a constant race of survival, keeping human whilst
-              being continually bombarded by insatiable hunger, feelings of
-              hopelessness and helplessness.
-            </p>
-            <br />
-            <p>
-              What’s even more depressing is that a majority of beggars were
-              once people living in privilege, their tongues aware of the taste
-              of luxury. They were people with dreams and talent all falling
-              victim under bad circumstances thrown by life. Many were abandoned
-              by their very own children for whom they worked tirelessly to
-              achieve them a great life; while some chose this life as an escape
-              from the hostile environment of Orphanages they were put in by
-              force and then the hapless victims who were born into poverty.
-              Apart from the innumerable predicaments they face from sustaining
-              an unsanitary lifestyle to living in a vicious cycle of poverty,
-              the children are stripped from their rights for education, a
-              crafted recipe for a never ending cycle of Beggary.
-            </p>
+
             <img src="/images/beggar.png" alt="" />
           </div>
         </div>
