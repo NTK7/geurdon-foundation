@@ -47,6 +47,7 @@ const Container = styled.div`
 		align-items: center;
 		> img {
 			height: 50px;
+			border-radius: 10px;
 			object-fit: contain;
 		}
 		> h2 {

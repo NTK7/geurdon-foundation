@@ -145,6 +145,7 @@ const Container = styled.div`
   > img {
     object-fit: contain;
     height: 40px;
+		border-radius: 10px !important;
     padding: 0 15px;
     flex: 0.1;
   }

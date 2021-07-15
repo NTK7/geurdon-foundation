@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import FlipCard from "../components/FlipCard";
 
 const HomePage = () => {
-  const bannerImagePaths = ["b1.jpg", "b2.jpg"];
+  const bannerImagePaths = ["b1.png", "b2.png"];
 
   return (
     <Container>
@@ -81,7 +81,7 @@ const HomePage = () => {
               figures of 85,000 to 100,000.
             </p>
 
-            <img src="/images/beggar.png" alt="" />
+            <img src="/images/beggar.jpeg" alt="" />
           </div>
         </div>
       </Fade>
