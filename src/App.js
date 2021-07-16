@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import HomePage from "./pages/HomePage";
 // import DrawableTab from "./shared/DrawableTab/DrawableTab";
-import Footer from "./shared/Footer";
+// import Footer from "./shared/Footer";
 // import Header from "./shared/Header";
 
 const App = () => {
