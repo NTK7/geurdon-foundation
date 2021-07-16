@@ -15,8 +15,8 @@ const App = () => {
 	}, []);
 
 	return (
-		<Router>
-			<div>
+		// <Router>
+			// <div>
 				{/* <Header />
 				<DrawableTab />
 				<Switch>
@@ -26,8 +26,8 @@ const App = () => {
 				</Switch>
 				<Footer /> */}
 				<h1>Site taken down</h1>
-			</div>
-		</Router>
+			// </div>
+		// </Router>
 	);
 };
 
