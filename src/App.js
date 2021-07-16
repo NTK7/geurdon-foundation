@@ -25,7 +25,7 @@ const App = () => {
             <h1>Site taken down</h1>
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
