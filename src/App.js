@@ -17,14 +17,15 @@ const App = () => {
 	return (
 		<Router>
 			<div>
-				<Header />
+				{/* <Header />
 				<DrawableTab />
 				<Switch>
 					<Route path="/">
 						<HomePage />
 					</Route>
 				</Switch>
-				<Footer />
+				<Footer /> */}
+				<h1>Site taken down</h1>
 			</div>
 		</Router>
 	);
