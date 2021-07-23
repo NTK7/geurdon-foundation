@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import DrawableTab from "./shared/DrawableTab/DrawableTab";
 import Footer from "./shared/Footer";
 import Header from "./shared/Header";
+// import Particles from "react-tsparticles";
+import Particles from "react-particles-js";
 
 const App = () => {
   useEffect(() => {

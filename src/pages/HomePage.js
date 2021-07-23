@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Fade } from "react-awesome-reveal";
 import FlipCard from "../components/FlipCard";
+import { ParticleAnimation } from "../ParticleComponent";
 
 const HomePage = () => {
   const bannerImagePaths = ["b1.png"];
@@ -28,6 +29,7 @@ const HomePage = () => {
         </Carousel>
       </Fade>
       <Fade triggerOnce={true} direction="up" delay={500}>
+        <ParticleAnimation />
         <div className="userHome__DonateNow">
           <Button>Donate Now</Button>
         </div>
@@ -43,7 +45,7 @@ const HomePage = () => {
             lend an additional and reliable hand to not only refine the lives of
             beggars but also to reduce the number of them in Sri Lanka.
           </p>
-          
+
           <div>
             <br />
             <br />
@@ -56,38 +58,41 @@ const HomePage = () => {
               figures of 85,000 to 100,000.
             </p>
             <br />
-          <p>
-            It goes without saying that beggars live a harsh life. Sadly, a lot
-            of us, though not all, look through the torn clothes, watch their
-            grimed, hashed skin and fail to regard that all of it is enveloping
-            a living human with human feelings; most similar to you in terms of
-            genome and soul. Life as a Beggar is many things at once; it is a
-            constant race of survival, keeping human whilst being continually
-            bombarded by insatiable hunger, feelings of hopelessness and
-            helplessness.
-          </p>
-          <br />
-          <p>
-            What’s even more depressing is that a majority of beggars were once
-            people living in privilege, their tongues aware of the taste of
-            luxury. They were people with dreams and talent all falling victim
-            under bad circumstances thrown by life. Many were abandoned by their
-            very own children for whom they worked tirelessly to achieve them a
-            great life; while some chose this life as an escape from the hostile
-            environment of Orphanages they were put in by force and then the
-            hapless victims who were born into poverty. Apart from the
-            innumerable predicaments they face from sustaining an unsanitary
-            lifestyle to living in a vicious cycle of poverty, the children are
-            stripped from their rights for education, a crafted recipe for a
-            never ending cycle of Beggary.
-          </p>
-            <img src="/images/beggar.jpeg" alt="" />
+            <p>
+              It goes without saying that beggars live a harsh life. Sadly, a
+              lot of us, though not all, look through the torn clothes, watch
+              their grimed, hashed skin and fail to regard that all of it is
+              enveloping a living human with human feelings; most similar to you
+              in terms of genome and soul. Life as a Beggar is many things at
+              once; it is a constant race of survival, keeping human whilst
+              being continually bombarded by insatiable hunger, feelings of
+              hopelessness and helplessness.
+            </p>
+            <br />
+            <p>
+              What’s even more depressing is that a majority of beggars were
+              once people living in privilege, their tongues aware of the taste
+              of luxury. They were people with dreams and talent all falling
+              victim under bad circumstances thrown by life. Many were abandoned
+              by their very own children for whom they worked tirelessly to
+              achieve them a great life; while some chose this life as an escape
+              from the hostile environment of Orphanages they were put in by
+              force and then the hapless victims who were born into poverty.
+              Apart from the innumerable predicaments they face from sustaining
+              an unsanitary lifestyle to living in a vicious cycle of poverty,
+              the children are stripped from their rights for education, a
+              crafted recipe for a never ending cycle of Beggary.
+            </p>
+            <ParticleAnimation />
+
+            <img src="/images/beggar.jpg" alt="" />
           </div>
         </div>
       </Fade>
 
       {/* Our programs */}
       <Fade triggerOnce={true} direction="up" delay={800}>
+        <ParticleAnimation />
         <div className="userHome__ourPrograms">
           <h1>Our programs</h1>
           <main>
@@ -98,7 +103,7 @@ const HomePage = () => {
               fadeDirection="right"
             />
             <FlipCard
-              title="Monthly distribution of care package"
+              title="Monthly distribution of care packages"
               description="This is some description about the card itself, This is some descripti scription about the card itsehe card itself, This is some description about the card itself"
               flipDirection="horizontal"
               fadeDirection="up"

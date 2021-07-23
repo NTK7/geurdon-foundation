@@ -124,7 +124,7 @@ export default function DrawableTab() {
             </Drawer>
           </React.Fragment>
         </div>
-        <LazyLoadImage src="/images/logo.png" alt="" />
+        <LazyLoadImage src="/images/logo-white.png" alt="" />
       </Container>
     </Fade>
   );
@@ -134,7 +134,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: #8267da;
-  padding: 20px 0;
+  padding: 10px 0;
 
   .drawable__menu {
     padding: 0px !important;
@@ -146,9 +146,9 @@ const Container = styled.div`
   }
   > img {
     object-fit: contain;
-    height: 40px;
+    height: 50px;
 		border-radius: 10px !important;
-    padding: 0 15px;
+    padding: 0 10px;
     flex: 0.1;
   }
   .drawable__list {
@@ -161,9 +161,9 @@ const Container = styled.div`
     display: flex;
   }
   @media screen and (max-width: 400px) {
-    padding: 15px 0;
+    padding: 5px 0;
     > img {
-      height: 35px;
+      height: 50px;
     }
   }
 `;

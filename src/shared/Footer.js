@@ -42,10 +42,15 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p>
-              <a target="_blank" rel="noreferrer" href="/">
-                View Annual report{" "}
-              </a>
+            <p
+              style={{ cursor: "pointer" }}
+              onClick={(e) =>
+                alert(
+                  "The Annual Report will be release on the 31st of December 2021"
+                )
+              }>
+              {/* <a target="_blank" rel="noreferrer" href="/"> */}
+              View Annual report {/* </a> */}
             </p>
             <p>
               <a rel="noreferrer" href="/">
@@ -57,7 +62,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://forms.gle/zz9BQAmZCKb1uWUUA">
-                Join as a volunteer 
+                Join as a volunteer
               </a>
             </p>
           </div>
