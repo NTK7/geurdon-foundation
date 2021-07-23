@@ -15,7 +15,8 @@ const Header = () => {
 					<Button
 						onClick={(e) => {
 							e.preventDefault();
-							window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
+							// window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
+							window.open('/');
 						}}>
 						Sponsor a child
 					</Button>

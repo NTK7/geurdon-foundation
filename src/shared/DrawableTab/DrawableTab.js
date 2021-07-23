@@ -70,7 +70,8 @@ export default function DrawableTab() {
               style={{ color: "#8267da" }}
               onClick={(e) => {
                 e.preventDefault();
-                window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+                // window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+                window.open("/");
               }}
             />
           </ListItemIcon>
@@ -78,7 +79,8 @@ export default function DrawableTab() {
             primary="Sponsor a child"
             onClick={(e) => {
               e.preventDefault();
-              window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+              // window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+              window.open("/");
             }}
           />
         </ListItem>

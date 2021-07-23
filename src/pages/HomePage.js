@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import FlipCard from "../components/FlipCard";
 
 const HomePage = () => {
-  const bannerImagePaths = ["b1.png", "b2.png"];
+  const bannerImagePaths = ["b1.png"];
 
   return (
     <Container>
@@ -43,7 +43,19 @@ const HomePage = () => {
             lend an additional and reliable hand to not only refine the lives of
             beggars but also to reduce the number of them in Sri Lanka.
           </p>
-          <br />
+          
+          <div>
+            <br />
+            <br />
+            <h2>The life of a beggar</h2>
+            <p>
+              Beggars are the embodiment of the fallacy that Human rights are
+              always bettering the lives of the unfortunate. Although beggars
+              are present at a global scale, Sri Lanka is chiefly infamous for
+              having an overwhelming number of beggars; ranging between piteous
+              figures of 85,000 to 100,000.
+            </p>
+            <br />
           <p>
             It goes without saying that beggars live a harsh life. Sadly, a lot
             of us, though not all, look through the torn clothes, watch their
@@ -69,18 +81,6 @@ const HomePage = () => {
             stripped from their rights for education, a crafted recipe for a
             never ending cycle of Beggary.
           </p>
-          <div>
-            <br />
-            <br />
-            <h2>The life of a beggar</h2>
-            <p>
-              Beggars are the embodiment of the fallacy that Human rights are
-              always bettering the lives of the unfortunate. Although beggars
-              are present at a global scale, Sri Lanka is chiefly infamous for
-              having an overwhelming number of beggars; ranging between piteous
-              figures of 85,000 to 100,000.
-            </p>
-
             <img src="/images/beggar.jpeg" alt="" />
           </div>
         </div>
@@ -103,12 +103,12 @@ const HomePage = () => {
               flipDirection="horizontal"
               fadeDirection="up"
             />
-            <FlipCard
+            {/* <FlipCard
               title="Child education program"
               description="This is some description about the card itself, This is some descripti scription ab cripti scription abcripti scription abcripti scription about the card itsehe card itself, This is some description about the card itself"
               flipDirection="vertical"
               fadeDirection="left"
-            />
+            /> */}
           </main>
         </div>
       </Fade>
