@@ -9,6 +9,10 @@ import { ParticleAnimation } from "../ParticleComponent";
 const HomePage = () => {
   const bannerImagePaths = ["b1.png"];
 
+  const onHandleDonateNow = () => {
+    window.open("https://forms.gle/kPwLPkxUP5Qpxuqx7", "_blank");
+  };
+
   return (
     <Container>
       <Fade triggerOnce={true} delay={500}>
@@ -31,7 +35,7 @@ const HomePage = () => {
       <Fade triggerOnce={true} direction="up" delay={500}>
         <ParticleAnimation />
         <div className="userHome__DonateNow">
-          <Button>Donate Now</Button>
+          <Button onClick={onHandleDonateNow}>Donate Now</Button>
         </div>
       </Fade>
 
