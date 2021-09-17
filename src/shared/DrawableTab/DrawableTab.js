@@ -13,7 +13,6 @@ import {
 } from "@material-ui/core";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import { useHistory } from "react-router-dom";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AccessibilityNewIcon from "@material-ui/icons/AccessibilityNew";
 import { Fade } from "react-awesome-reveal";
