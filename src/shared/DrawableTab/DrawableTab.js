@@ -64,13 +64,13 @@ export default function DrawableTab() {
           </ListItemIcon>
           <ListItemText primary="Home" onClick={() => history.replace("/")} />
         </ListItem>
-        <ListItem button key="Sponsor a child">
+        {/* <ListItem button key="Sponsor a child">
           <ListItemIcon>
             <AttachMoneyIcon
               style={{ color: "#8267da" }}
               onClick={(e) => {
                 e.preventDefault();
-                // window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+                window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
                 window.open("/");
               }}
             />
@@ -79,11 +79,11 @@ export default function DrawableTab() {
             primary="Sponsor a child"
             onClick={(e) => {
               e.preventDefault();
-              // window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
+              window.open("https://forms.gle/qLeWxxj3prrnFtqy7", "_blank");
               window.open("/");
             }}
           />
-        </ListItem>
+        </ListItem> */}
         <ListItem button key="Join as a volunteer" className="listItem__title">
           <ListItemIcon>
             <AccessibilityNewIcon

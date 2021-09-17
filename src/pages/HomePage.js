@@ -44,7 +44,7 @@ const HomePage = () => {
         <div className="userHome__whoAreWe">
           <h1>About us</h1>
           <p>
-            The Guerdon Foundation is an NGO carrying a focused mission of
+            The Guerdon Foundation is an non-profit organization carrying a focused mission of
             supporting the lives of the beggars In Sri Lanka. Our goal is to
             lend an additional and reliable hand to not only refine the lives of
             beggars but also to reduce the number of them in Sri Lanka.
@@ -101,16 +101,18 @@ const HomePage = () => {
           <h1>Our programs</h1>
           <main>
             <FlipCard
-              title="Weekly feeding program"
+              title="Feeding program"
               description="This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself"
               flipDirection="vertical"
               fadeDirection="right"
+              image="/images/feedingProgram.png"
             />
             <FlipCard
               title="Monthly distribution of care packages"
               description="This is some description about the card itself, This is some descripti scription about the card itsehe card itself, This is some description about the card itself"
               flipDirection="horizontal"
               fadeDirection="up"
+              image="/images/monthlyDistribution.png"
             />
             {/* <FlipCard
               title="Child education program"

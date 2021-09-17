@@ -31,7 +31,7 @@ const Footer = () => {
                 guerdonfoundation
               </a>
             </p>
-            <p>
+            {/* <p>
               <strong>Twitter:</strong>{" "}
               <a
                 target="_blank"
@@ -39,7 +39,7 @@ const Footer = () => {
                 href="https://twitter.com/GuerdonFoundat1">
                 @GuerdonFoundat1
               </a>
-            </p>
+            </p> */}
           </div>
           <div>
             <p
@@ -52,11 +52,11 @@ const Footer = () => {
               {/* <a target="_blank" rel="noreferrer" href="/"> */}
               View Annual report {/* </a> */}
             </p>
-            <p>
+            {/* <p>
               <a rel="noreferrer" href="/">
                 Sponsor a child (Coming soon)
               </a>
-            </p>
+            </p> */}
             <p>
               <a
                 target="_blank"
@@ -116,7 +116,7 @@ const Container = styled.div`
     display: flex;
     padding: 40px 30px;
 
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     > div {
       > p {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@material-ui/core";
 import { Fade } from "react-awesome-reveal";
 
-const FlipCard = ({ title, description, flipDirection, fadeDirection }) => {
+const FlipCard = ({ title, description, flipDirection, fadeDirection, image }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const onHandleClick = () => {
@@ -17,6 +17,7 @@ const FlipCard = ({ title, description, flipDirection, fadeDirection }) => {
         <ReactCardFlip isFlipped={isFlipped} flipDirection={flipDirection}>
           <div className="card__frontView">
             <p>{title}</p>
+            <img src={image} alt="" />
             <Button onClick={onHandleClick}>More Details</Button>
           </div>
 
@@ -39,7 +40,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f2ff;
+    /* background-color: #f5f2ff; */
     justify-content: space-evenly;
     padding: 10px;
 
@@ -49,6 +50,10 @@ const Container = styled.div`
     height: 300px;
     width: 300px;
 
+    >img{
+      object-fit: contain;
+      height: 150px;
+    }
     > p {
       text-align: center;
     }
@@ -61,6 +66,7 @@ const Container = styled.div`
     }
   }
   .card__frontView {
+    background-color: white;
     > p {
       font-size: larger;
       font-weight: bold;
@@ -68,6 +74,7 @@ const Container = styled.div`
     }
   }
   .card__backView {
+    background-color: #f5f2ff;
     > p {
       color: #8267da;
     }
