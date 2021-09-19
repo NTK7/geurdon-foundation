@@ -102,14 +102,14 @@ const HomePage = () => {
           <main>
             <FlipCard
               title="Feeding program"
-              description="This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself, This is some description about the card itself"
+              description="The focal aim of distributing the food packages to the beggars will be instilled and segregated in teams that would cover a range of areas within the city. These packages comprise of nutritious and hygienic food that not only promises to fill an individual and keep them healthy but also carries a semblance of love and the notion that they will be cared for."
               flipDirection="vertical"
               fadeDirection="right"
               image="/images/feedingProgram.png"
             />
             <FlipCard
               title="Monthly distribution of care packages"
-              description="This is some description about the card itself, This is some descripti scription about the card itsehe card itself, This is some description about the card itself"
+              description="In this program, Amenities like self-care products will be dispensed to make lives a little more comfortable every month. These include body cleansing products, sanitary pads, pain-relieving ointments, and other essentials."
               flipDirection="horizontal"
               fadeDirection="up"
               image="/images/monthlyDistribution.png"
