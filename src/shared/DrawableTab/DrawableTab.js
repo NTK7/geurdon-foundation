@@ -101,6 +101,25 @@ export default function DrawableTab() {
             }}
           />
         </ListItem>
+
+        <ListItem button key="Donate" className="listItem__title">
+          <ListItemIcon>
+            <AccessibilityNewIcon
+              style={{ color: "#8267da" }}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://forms.gle/kPwLPkxUP5Qpxuqx7", "_blank");
+              }}
+            />
+          </ListItemIcon>
+          <ListItemText
+            primary="Doante"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://forms.gle/kPwLPkxUP5Qpxuqx7", "_blank");
+            }}
+          />
+        </ListItem>
       </List>
     </div>
   );

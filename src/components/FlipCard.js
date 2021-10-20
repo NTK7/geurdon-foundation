@@ -22,7 +22,7 @@ const FlipCard = ({ title, description, flipDirection, fadeDirection, image }) =
           </div>
 
           <div className="card__backView">
-            <p>{description}</p>
+            <p className="description-text">{description}</p>
             <Button onClick={onHandleClick}>Go Back</Button>
           </div>
         </ReactCardFlip>
@@ -56,6 +56,9 @@ const Container = styled.div`
     }
     > p {
       text-align: center;
+    }
+    .description-text{
+      text-align: justify;
     }
     > button {
       border: 1px #8267da solid;

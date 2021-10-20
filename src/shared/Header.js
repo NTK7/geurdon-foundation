@@ -9,26 +9,25 @@ const Header = () => {
     <Fade triggerOnce={true} direction="down">
       <Container>
         <section>
-          <LazyLoadImage src="/images/logo-white.png" alt="" />
+          <LazyLoadImage src="/images/logo3.png" alt="" />
           <h2>
             <Typist>GUERDON FOUNDATION</Typist>
           </h2>
         </section>
         <section>
-          {/* <Button
-            onClick={(e) => {
-              e.preventDefault();
-              window.open('https://forms.gle/qLeWxxj3prrnFtqy7', '_blank');
-              window.open("/");
-            }}>
-            Sponsor a child
-          </Button> */}
           <Button
             onClick={(e) => {
               e.preventDefault();
               window.open("https://forms.gle/zz9BQAmZCKb1uWUUA", "_blank");
             }}>
             Join as a volunteer
+          </Button>
+          <Button
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://forms.gle/kPwLPkxUP5Qpxuqx7", "_blank");
+            }}>
+            Donate
           </Button>
         </section>
       </Container>
@@ -40,7 +39,7 @@ export default Header;
 
 const Container = styled.div`
   background-color: #8267da;
-  padding: 20px;
+  padding: 1pc;
   display: flex;
   justify-content: space-between;
   align-items: center;

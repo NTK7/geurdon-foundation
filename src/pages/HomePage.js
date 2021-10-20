@@ -4,10 +4,24 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Fade } from "react-awesome-reveal";
 import FlipCard from "../components/FlipCard";
-import { ParticleAnimation } from "../ParticleComponent";
+import ReactPlayer from "react-player/lazy";
 
 const HomePage = () => {
-  const bannerImagePaths = ["b1.png"];
+  const bannerImagePaths = [
+    "b1.png",
+    "GF1-min.png",
+    "GF10-min.png",
+    "GF12-min.png",
+    "GF5-min.png",
+  ];
+
+  const midSectionImagePaths = [
+    "GF11-min.png",
+    "GF13-min.png",
+    "GF6-min.png",
+    "GF7-min.png",
+    "GF14-min.png",
+  ];
 
   const onHandleDonateNow = () => {
     window.open("https://forms.gle/kPwLPkxUP5Qpxuqx7", "_blank");
@@ -24,7 +38,7 @@ const HomePage = () => {
           infiniteLoop={true}
           showArrows={true}
           showStatus={false}
-          className="homePage__Carousel">
+          className="homePage__TopCarousel">
           {bannerImagePaths.map((item) => (
             <div>
               <img src={`/images/${item}`} alt="related-img" />
@@ -33,27 +47,47 @@ const HomePage = () => {
         </Carousel>
       </Fade>
       <Fade triggerOnce={true} direction="up" delay={500}>
-        <ParticleAnimation />
         <div className="userHome__DonateNow">
           <Button onClick={onHandleDonateNow}>Donate Now</Button>
+          <ReactPlayer
+            url="https://youtu.be/ZviiOUp7aQM"
+            playing={true}
+            loop={true}
+            className="video-player"
+          />
         </div>
       </Fade>
 
-      {/* who are we */}
       <Fade triggerOnce={true} delay={800} direction="up">
         <div className="userHome__whoAreWe">
           <h1>About us</h1>
           <p>
-            The Guerdon Foundation is an non-profit organization carrying a focused mission of
-            supporting the lives of the beggars In Sri Lanka. Our goal is to
-            lend an additional and reliable hand to not only refine the lives of
-            beggars but also to reduce the number of them in Sri Lanka.
+            Guerdon foundation is a youth-led non-profit organization carrying a
+            focused mission of supporting the lives of beggars in Sri Lanka. Our
+            goal is to lend an additional and reliable hand to not only refine
+            the lives of beggars but to also reduce the number of them in Sri
+            Lanka.
           </p>
+          <p>
+            We have two programs: The feeding program and the monthly
+            distribution of care packages. Apart from this, we also help the
+            beggars with their specific needs like school supplies for child
+            beggars, help for pregnant mothers, help for parents who want to
+            enroll their children in school, employment opportunities for the
+            able-bodied beggars who are willing to work and many more. Join our
+            community of volunteers to help us carry out our mission!
+          </p>
+          <ReactPlayer
+            url="https://youtu.be/iQ9NsY0QdXI"
+            playing={true}
+            loop={true}
+            className="video-player"
+          />
 
           <div>
             <br />
             <br />
-            <h2>The life of a beggar</h2>
+            <h2>Why we started guerdon foundation</h2>
             <p>
               Beggars are the embodiment of the fallacy that Human rights are
               always bettering the lives of the unfortunate. Although beggars
@@ -87,16 +121,24 @@ const HomePage = () => {
               the children are stripped from their rights for education, a
               crafted recipe for a never ending cycle of Beggary.
             </p>
-            <ParticleAnimation />
-
-            <img src="/images/beggar.jpg" alt="" />
+            <Carousel
+              autoPlay={true}
+              emulateTouch={true}
+              infiniteLoop={true}
+              showArrows={true}
+              showStatus={false}
+              className="homePage__BottomCarousel">
+              {midSectionImagePaths.map((item) => (
+                <div>
+                  <img src={`/images/${item}`} alt="related-img" />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
       </Fade>
 
-      {/* Our programs */}
       <Fade triggerOnce={true} direction="up" delay={800}>
-        <ParticleAnimation />
         <div className="userHome__ourPrograms">
           <h1>Our programs</h1>
           <main>
@@ -114,12 +156,6 @@ const HomePage = () => {
               fadeDirection="up"
               image="/images/monthlyDistribution.png"
             />
-            {/* <FlipCard
-              title="Child education program"
-              description="This is some description about the card itself, This is some descripti scription ab cripti scription abcripti scription abcripti scription about the card itsehe card itself, This is some description about the card itself"
-              flipDirection="vertical"
-              fadeDirection="left"
-            /> */}
           </main>
         </div>
       </Fade>
@@ -138,19 +174,24 @@ const Container = styled.div`
     color: #8267da;
     display: none;
   }
-  .homePage__Carousel {
+  .homePage__TopCarousel,
+  .homePage__BottomCarousel {
     .carousel {
       .thumbs {
         display: none;
       }
     }
   }
+  .homePage__BottomCarousel {
+    margin-top: 3pc;
+  }
   .userHome__DonateNow {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
     > button {
+      margin: 3pc 0;
       border: 1px white solid;
       padding: 20px 40px;
       background-color: #8267da;
@@ -165,15 +206,26 @@ const Container = styled.div`
         color: #8267da;
       }
     }
+    .video-player {
+      width: 60% !important;
+      height: 45vh;
+    }
   }
   .userHome__whoAreWe {
-    /* border: 1px blue solid; */
     margin: 40px;
     padding: 40px 20px;
+    .video-player {
+      width: 60% !important;
+      height: 45vh;
+      margin: 3pc auto;
+    }
     > p,
-    > h1,
-    > div > h2,
     > div > p {
+      text-align: justify;
+      margin: 0.5pc 0;
+    }
+    > h1,
+    > div > h2 {
       text-align: center;
     }
     > h1,
@@ -254,8 +306,12 @@ const Container = styled.div`
     .userHome__DonateNow {
       > button {
         padding: 10px 30px;
+        margin-top: 1pc;
       }
-      margin-top: 30px;
+      .video-player {
+        width: 95% !important;
+        height: 45vh;
+      }
     }
     .userHome__whoAreWe {
       padding: 0;
@@ -274,6 +330,10 @@ const Container = styled.div`
         > img {
           height: 160px;
         }
+      }
+      .video-player {
+        width: 95% !important;
+        height: 45vh;
       }
     }
     .userHome__ourPrograms {
