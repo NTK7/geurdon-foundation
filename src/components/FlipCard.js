@@ -98,6 +98,7 @@ const Container = styled.div`
     .card__frontView,
     .card__backView {
       width: 250px;
+      min-height: 380px;
     }
   }
 `;
